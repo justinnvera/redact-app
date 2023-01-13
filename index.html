@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redact Tool</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Redact Text Web App</h1>
+    <form>
+        <!-- Full Text -->
+        <label for="originalText">Original Text</label>
+        <input type="text" id="originalText" value="test"></input>
+        <br>
+        <br>   
+        <!-- Text To Redact -->    
+        <label for="redactedWords">Word(s) to be redacted</label>
+        <input type="text" id="redactedWords" value="test"></input>  
+        <!-- Ignore capitals -->
+        <br>
+        <br>
+        <label for="ignoreCapitals">Ignore capitals?</label>
+        <select id="ignoreCapitals">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="textDisplay">Your redacted text:</label>
+        <div id="textDisplay"></div>
+    </form>
+    <br>
+    <!-- Word Counter -->
+    <button onclick="redact()">Redact</button>
+</body>
+<script src="main.js"></script>
+</html>
