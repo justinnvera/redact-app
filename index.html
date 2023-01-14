@@ -10,21 +10,21 @@
 <body>
     <h1>Redact Text Web App</h1>
     <form>
-        <!-- Full Text -->
+        <!-- Original Text -->
         <label for="originalText">Original Text</label>
-        <input type="text" id="originalText" value="test"></input>
+        <input type="text" id="originalText" value="justin@gmail.com @yahoo.com" style = "width: 500px" ></input>
         <br>
         <br>   
-        <!-- Text To Redact -->    
-        <label for="redactedWords">Word(s) to be redacted</label>
-        <input type="text" id="redactedWords" value="test"></input>  
-        <!-- Ignore capitals -->
+        <!-- Words To Redact -->    
+        <label for="redactedWords">Word(s) to be redacted (seperate by space)</label>
+        <input type="text" id="redactedWords" value=""></input>  
+        <!-- Redact Email Addresses Option -->
         <br>
         <br>
-        <label for="ignoreCapitals">Ignore capitals?</label>
-        <select id="ignoreCapitals">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+        <label for="redact-email-addresses">Redact Email Addresses?</label>
+        <select id="redact-email-addresses">
+            <option value="true" selected>Yes</option>
+            <option value="false">No</option>
         </select>
         <br>
         <br>
