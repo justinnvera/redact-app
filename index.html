@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Redact Tool</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="input">
+        <header>Highlight Text You Want To Redact</header>
+        <!-- <a href="https://www.flaticon.com/free-icons/edit" title="edit icons">Edit icons created by Pixel perfect - Flaticon</a> -->
+        <form id="input-form">
+            <!-- Original Text -->
+            <textarea type="text" id="originalText" value="">sampleemail@gmail.com samplename sample www.sampleurl.com https://anothersampleurl.com http://anothersampleurl.org</textarea>
+            <div id="options">
+                <!-- Words To Redact -->    
+                <label for="redactedWords" id="redactedWordsLabel">Word(s) to be redacted (seperate by ", ")</label>
+                <textarea type="text" id="redactedWords" value="vera"></textarea>     
+                <div id="additional-options">
+                    <!-- Redact Email Addresses Option -->
+                    <div id="redact-email-addresses-container">
+                        <label for="redact-email-addresses">Redact Email Addresses?</label>
+                        <select id="redact-email-addresses">
+                            <option value="true">Yes</option>
+                            <option value="false" selected>No</option>
+                        </select>    
+                    </div>
+                    <!-- Redact URLs Option -->
+                    <div id="redact-urls-container">
+                    <label for="redact-urls">Redact Urls?</label>
+                    <select name="" id="redact-urls">
+                        <option value="true">Yes</option>
+                        <option value="false" selected>No</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+    <div id="output">
+        <header>Your Redacted Text</header>
+        <textarea id="textDisplay"></textarea>
+        <div id="redact-container">
+            <button onclick="redact()" id="redact">Redact!</button>
+        </div>
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
