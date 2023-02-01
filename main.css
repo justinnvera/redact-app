@@ -1,0 +1,212 @@
+/* ! Global  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    box-sizing: border-box;
+}
+label {
+    font-size: 14px;
+}
+/* ? Body Grid */
+body {
+    font-family: "DM Sans", sans-serif; 
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    word-wrap: break-word;
+}
+/* ? Input */
+#input {
+    width: 475px;
+    height: 300px;
+}
+#input img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #31708f;
+    border-radius: 5px;
+    padding: 5px;
+}
+#input header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 70px;
+    background-color: #d9edf7;
+    border: #bce8f1 1.5px solid;
+    color: #31708f;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+#originalText {
+    width: 100%;
+    height: 400px;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1.5px solid #ccc;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+#originalText:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 1px #9ecaed;
+    transition: all 0.1s ease-in-out;
+}
+label {
+    font-size: 14px;
+}
+#input-form {
+    display:flex;
+    flex-direction: column;
+}
+/* Options */
+#options {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 0.57rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    padding-bottom: 1rem;
+}
+#redactedWords {
+    display: block;
+    width: 95%;
+    height: 1.5em;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1.5px solid #ccc;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+#additional-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#redact-email-addresses-container {
+    display:flex;
+    gap: 1rem;
+}
+#redact-email-addresses {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1.5px solid #ccc;
+}
+#redact-urls-container {
+    display:flex;
+    gap: 1rem;
+}
+#redact-urls {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1.5px solid #ccc;
+}
+/* ? Output */
+#output {
+    width: 475px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#output header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 70px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: #d6e9c6 1.5px solid;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+#textDisplay {
+    width: 100%;
+    height: 400px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1.5px solid #ccc;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+#textDisplay:focus { 
+    outline: none;
+    border-color: hsla(121, 33%, 35%, 0.5);
+    box-shadow: 0 0 1px #3c763d;
+    transition: all 0.1s ease-in-out;
+}
+/* ? Redact */
+#redact-container {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 0.57rem;
+    padding-top: 0.5rem;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#redact {
+    width: 100px;
+    height: 40px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 14px;    
+}
+#redact:hover {
+    opacity: 0.8;
+}
+#redact:active {
+    opacity: 1;
+}
+
