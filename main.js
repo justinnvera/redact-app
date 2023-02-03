@@ -5,11 +5,6 @@ let textDisplay = document.getElementById("textDisplay");
 let redactEmailsSelect = document.getElementById("redact-email-addresses"); 
 let redactUrlsSelect = document.getElementById("redact-urls");
 
-
-
-
-
-
 function redact() {
     // ! checks the "full text" against the "text to redact"
     let originalTextArray = originalText.value.split(' '); //  creates an array of strings of the full text
@@ -72,7 +67,6 @@ function redact() {
                 emailTextLetters = [];
             }
         } else if (redactEmailsSelect.value === "false") {
-            console.log("user chose to not redact emails")
             emailTextLetters = [];
         }
         // ? Url Check
@@ -90,10 +84,6 @@ function redact() {
             urlTextLetters = [];
         }
     }   
-     
-    console.log(originalTextLetters);
     // ! displays the redacted text: 
     textDisplay.value = originalTextArray.join(' ');
 }
-
-// !CANNOT GEET THE VALUE OF SELECT
